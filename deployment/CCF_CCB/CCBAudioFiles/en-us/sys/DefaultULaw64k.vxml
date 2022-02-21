@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<vxml version="1.0">
+        <form id=" PM,Welcome" scope="dialog">
+           <property name="inputmodes" value="voice dtmf"/>
+
+           <block>
+     <prompt bargein="false">
+                 <audio src="Critical_Error_ULaw.wav"  caching="fast" fetchhint="prefetch" /> 
+		           </prompt>
+           </block>         
+
+           
+	<disconnect/>           
+        </form> 
+</vxml>

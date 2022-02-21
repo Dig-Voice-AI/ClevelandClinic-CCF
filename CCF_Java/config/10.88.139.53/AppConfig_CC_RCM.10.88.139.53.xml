@@ -1,0 +1,149 @@
+<AppConfigDB>
+<AppConfig>
+
+<Settings1>
+
+	<entry>
+		<string>s_app</string>
+		<string>CC_RCM</string>
+	</entry>
+
+	<entry>
+		<string>s_DEFAULT_AUDIO_PATH</string>
+		<string>http://10.88.139.53/audio/CC_RCM/</string>
+	</entry>
+
+<!-- 	
+	<entry>
+		<string>s_DEFAULT_AUDIO_PATH</string>
+		<string>http://mediaserver/audio/CC_RCM/</string>
+	</entry>
+-->
+
+	<entry>
+		<string>CallBack</string>
+		<string> </string>
+	</entry>
+
+</Settings1>
+
+<Settings2> 
+			<entry>
+				<string>s_AppAudioPrefix</string>
+				<string>CC_RCM</string>
+			</entry>
+
+
+			<entry>
+				<string>s_MaxRetryCount</string>
+				<string>1</string>
+			</entry>
+</Settings2> 
+
+</AppConfig> 
+	<properties>
+		<CC_RCM>			
+			<entry>
+				<string>s_AppAudioPrefix</string>
+				<string>CC_RCM</string>
+				</entry>
+			<entry>
+				<string>s_MaxRetryCount</string>
+				<string>2</string>
+			</entry>
+			
+			<entry>
+				<string>MenuNoinputTimeout</string>
+				<string>5s</string>
+			</entry>
+			
+			<entry>
+				<string>DigitsNoinputTimeout</string>
+				<string>5s</string>
+			</entry>
+			
+			<entry>
+				<string>InterDigitsTimeout</string>
+				<string>3s</string>
+			</entry>
+			
+		</CC_RCM>
+		
+		<LegacySyslog>
+			<entry>
+				<string>ConnectTimeout</string>
+				<string>2000</string>
+			</entry>
+			<entry>
+				<string>LogToFile</string>
+				<string>Yes</string>
+			</entry>
+			<entry>
+				<string>Host</string>
+				<string></string>
+			</entry>
+			<entry>
+				<string>Port</string>
+				<string></string>
+			</entry>
+			<entry>
+				<string>TransportProtocol</string>
+				<string>TCP</string>
+			</entry>
+			<entry>
+				<string>EventLoggingTimeout</string>
+				<string>4000</string>
+			</entry>
+		</LegacySyslog>
+		
+		<DB_CCF>
+			<entry>
+				<string>Class</string>
+				<string>ccf.custom.da.impl.EMPIDBDaImpl</string>
+			</entry>
+			<entry>
+				<string>LogLevel</string>
+				<string>3</string>
+			</entry>
+			<entry>
+				<string>username</string>
+				<string>teletech</string>
+			</entry>
+			<entry>
+				<string>password</string>
+				<string>5#Cp3UsvG]x7</string>
+			</entry>
+			<entry>
+				<string>serverName</string>
+				<string>ESQLTEST23\\SQLT823</string>
+			</entry>
+			<entry>
+				<string>port</string>
+				<string>1433</string>
+			</entry>
+			<entry>
+				<string>databaseName</string>
+				<string>AspectPFS</string>
+				<!-- <string>test</string> -->
+			</entry>
+			<entry>
+				<string>connectTimeout</string>
+				<string>10000</string>
+			</entry>
+			<entry>
+				<string>responseTimeout</string>
+				<string>10000</string>
+			</entry>
+			<entry>
+				<string>debug</string>
+				<string>true</string>
+			</entry>
+			<entry>
+				<string>logResponse</string>
+				<string>true</string>
+			</entry>
+      </DB_CCF>
+		
+	</properties>
+
+</AppConfigDB>

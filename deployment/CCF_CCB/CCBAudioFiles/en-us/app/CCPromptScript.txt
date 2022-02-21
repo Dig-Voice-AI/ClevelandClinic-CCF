@@ -1,0 +1,93 @@
+CCAM_PM.wav
+	Press 1 for AM, Press 2 for PM
+
+CCANIPart1.wav   
+	If you would like us to call you back at
+
+CCANIPart2.wav   
+	Press 1.  
+	To use a different callback number, press 2
+
+CCAnnounceValidCallbackHours.wav  
+	Callbacks can be placed only between 9 AM and 10 PM.  
+	Please enter a valid callback time.
+
+CCAskIfCallerReadyPart1.wav
+	Hello.  
+	This is a callback for
+
+
+CCAskIfCallerReadyPart1.wav
+	Press 1 if you are ready to speak to an associate.  
+	Press 2 if you need time to bring that person to the telephone.
+	Press 3 to cancel this callback.
+
+CCAskIfCallerReadyPart1.wav
+	Press 3 to cancel this callback.
+
+CCConfirmANIPart1.wav
+	You entered
+
+CCConfirmANIPart2.wav
+	Is that correct?  
+	Press 1 for yes, press 2 for no.
+
+CCError.wav
+
+	I'm sorry, the callback has been cancelled.
+	If you would like to wait for an associate, simply stay on the line
+
+CCGoodbye.wav
+	Your callback request has been successfully scheduled.  
+	Goodbye.
+
+CCGoodbyeCanceled.wav
+	The callback has been permanently canceled at your request.  
+	Goodbye.
+
+CCNoANI.wav
+	Please enter your callback telephone number followed by the pound key
+
+CCPhoneNotValid.wav
+	That telephone format is incorrect.
+
+CCPreemptivePart1.wav
+	If you would like us to call you back in about
+
+CCPreemptivePart2.wav
+	minutes, press 1.
+
+CCPress1WhenReady.wav
+	Press 1 when you are ready to speak to an associate.
+
+CCRecordName.wav
+	At the tone, please record your name then press pound.
+
+CCScheduledAsktime.wav
+	Enter the time that you would to be called back in US Eastern time.
+	For example, nine zero five is five after nine.
+
+CCScheduledDTMF1.wav
+	If you would like us to call you back at the time of your choice, press 1.
+
+CCScheduledDTMF2.wav
+	If you would like us to call you back at the time of your choice, press 2.
+
+CCStayOnLine.wav
+	If you would like to wait for an associate, simply stay on the line.
+
+CCTimeNotValid.wav
+	That time format is incorrect.
+	
+CCUseDifferentCallbackNumber.wav	
+	Please use a different callback number
+
+CCWaitTimePart1.wav
+	All associates are currenly busy.  
+	You wait time is approximately
+
+CCWaitTimePart2.wav
+	minutes.
+
+CCYouAreNumber1InQueue.wav
+	You are currently number one in the queue and an associate will be with you shortly.

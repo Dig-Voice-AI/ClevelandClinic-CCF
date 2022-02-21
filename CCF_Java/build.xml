@@ -1,0 +1,89 @@
+<project name="buildTask" default="main">
+
+	<property file="app.properties" />
+	<buildnumber file="version.build" />
+
+	<tstamp>
+		<format property="TODAY" pattern="yyyy-MM-dd HH:mm:ss" />
+	</tstamp>
+
+
+	<target name="main" depends="makejars,copyjars">
+		<echo message="Done" />
+	</target>
+
+
+	<target name="makejars">
+
+		<jar destfile="${basedir}/build/${app}.jar" basedir="${basedir}/bin" excludes="**">
+			<manifest>
+				<attribute name="Built-Date" value="${TODAY}" />
+				<attribute name="Built-On" value="${os.name} ${os.version} ${os.arch}" />
+				<attribute name="Built-JVM" value="${java.vm.vendor} ${java.vm.name} ${java.vm.version}" />
+				<attribute name="Version" value="${version.number}.${build.number}" />
+			</manifest>
+
+			<fileset dir="${basedir}/bin/">
+				<filename name="${packageName}/*" />
+			</fileset>
+			<fileset dir="${basedir}/bin/">
+				<filename name="${packageName}/cvpvxml/actionelement/**" />
+			</fileset>
+			<fileset dir="${basedir}/bin/">
+				<filename name="${packageName}/cvpvxml/decisionelement/**" />
+			</fileset>
+			<fileset dir="${basedir}/bin/">
+				<filename name="${packageName}/da/*" />
+			</fileset>
+			<fileset dir="${basedir}/bin/">
+				<filename name="${packageName}/dm/*" />
+			</fileset>
+		</jar>
+
+
+		<jar destfile="${basedir}/build/${app}_impl.jar" basedir="${basedir}/bin" excludes="**">
+			<manifest>
+				<attribute name="Built-Date" value="${TODAY}" />
+				<attribute name="Built-On" value="${os.name} ${os.version} ${os.arch}" />
+				<attribute name="Built-JVM" value="${java.vm.vendor} ${java.vm.name} ${java.vm.version}" />
+				<attribute name="Version" value="${version.number}.${build.number}" />
+			</manifest>
+
+			<fileset dir="${basedir}/bin/">
+				<filename name="${packageName}/da/impl/*" />
+			</fileset>
+		</jar>
+
+		<jar destfile="${basedir}/build/${app}_mock.jar" basedir="${basedir}/bin" excludes="**">
+			<manifest>
+				<attribute name="Built-Date" value="${TODAY}" />
+				<attribute name="Built-On" value="${os.name} ${os.version} ${os.arch}" />
+				<attribute name="Built-JVM" value="${java.vm.vendor} ${java.vm.name} ${java.vm.version}" />
+				<attribute name="Version" value="${version.number}.${build.number}" />
+			</manifest>
+
+		</jar>
+
+		<jar destfile="${basedir}/build/${app}_testcases.jar" basedir="${basedir}/bin" excludes="**">
+			<manifest>
+				<attribute name="Built-Date" value="${TODAY}" />
+				<attribute name="Built-On" value="${os.name} ${os.version} ${os.arch}" />
+				<attribute name="Built-JVM" value="${java.vm.vendor} ${java.vm.name} ${java.vm.version}" />
+				<attribute name="Version" value="${version.number}.${build.number}" />
+			</manifest>
+
+			<fileset dir="${basedir}/bin/">
+				<filename name="test/**" />
+			</fileset>
+		</jar>
+		
+		
+	</target>
+
+	<target name="copyjars">
+		<copy file="${basedir}/build/${app}_impl.jar" todir="${basedir}/../CC_RCM/deploy/java/application/lib" preservelastmodified="true" flatten="true" />
+		<copy file="${basedir}/build/${app}.jar" todir="${basedir}/../CC_RCM/deploy/java/application/lib" preservelastmodified="true" flatten="true" />		
+	</target>
+
+</project>
+

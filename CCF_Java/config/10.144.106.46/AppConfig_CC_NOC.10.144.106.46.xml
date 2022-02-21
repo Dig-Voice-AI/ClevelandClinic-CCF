@@ -1,0 +1,108 @@
+<AppConfigDB>
+<AppConfig>
+
+<Settings1>
+<entry><string>s_app</string><string>CC_NOC</string></entry>
+<entry><string>s_DEFAULT_AUDIO_PATH</string><string>http://10.144.106.46/audio/CC_NOC/</string></entry>
+<entry><string>s_DEFAULT_GRAMMAR_PATH</string><string>http://10.144.106.46/grammar/CC_NOC/</string></entry>
+<!-- <entry><string>s_DEFAULT_AUDIO_PATH</string><string>http://mediaserver/audio/CC_NOC/</string></entry> -->
+<!-- <entry><string>s_DEFAULT_GRAMMAR_PATH</string><string>http://mediaserver/grammar/CC_NOC/</string></entry> -->
+
+<entry><string>s_TestCallType</string><string>SPSI</string></entry>
+
+</Settings1>
+
+<Settings2>
+			<!-- application group name for report -->
+			<entry>
+				<string>s_AppGroupName</string>
+				<string>CC_NOC</string>
+			</entry>
+			
+			<!-- media file prefix if any -->
+			<entry>
+				<string>s_AppAudioPrefix</string>
+				<string>CC_NOC</string>
+			</entry>
+			
+			<entry>
+				<string>s_InfoMsgPath</string>
+				<string>info/</string>
+			</entry>
+	
+			<entry>
+				<string>s_MonitoringKeyPrefix</string>
+				<string>CC_NOC</string>
+			</entry>  	      
+		</Settings2> 
+
+	</AppConfig> 
+
+	<properties>
+		<CC_NOC>
+<entry>
+				<string>s_AppAudioPrefix</string>
+				<string>CC_NOC</string>
+				</entry>		
+			<entry>
+				<string>MaxRetryCount</string>
+				<string>2</string>
+			</entry>
+			
+			<entry>
+				<string>MenuNoinputTimeout</string>
+				<string>5s</string>
+			</entry>
+			
+			<entry>
+				<string>DigitsNoinputTimeout</string>
+				<string>5s</string>
+			</entry>
+			
+			<entry>
+				<string>InterDigitsTimeout</string>
+				<string>3s</string>
+			</entry>
+			
+			<!-- unit: 500 ms -->
+			<entry>
+				<string>PauseBeforeMsg</string>
+				<string>10</string>
+			</entry>  	
+			
+			<!-- unit: 500 ms -->
+			<entry>
+				<string>PauseAfterMsg</string>
+				<string>0</string>
+			</entry> 
+		</CC_NOC>
+		
+		<LegacySyslog>
+			<entry>
+				<string>ConnectTimeout</string>
+				<string>2000</string>
+			</entry>
+			<entry>
+				<string>LogToFile</string>
+				<string>Yes</string>
+			</entry>
+			<entry>
+				<string>Host</string>
+				<string></string>
+			</entry>
+			<entry>
+				<string>Port</string>
+				<string></string>
+			</entry>
+			<entry>
+				<string>TransportProtocol</string>
+				<string>TCP</string>
+			</entry>
+			<entry>
+				<string>EventLoggingTimeout</string>
+				<string>4000</string>
+			</entry>
+		</LegacySyslog>
+	</properties>
+
+</AppConfigDB>

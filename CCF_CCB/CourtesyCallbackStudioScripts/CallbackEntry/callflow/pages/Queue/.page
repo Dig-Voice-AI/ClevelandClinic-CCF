@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@11551219:1228135729843" name="Queue" version="6.0.1">
+<element height="46" id="Element@13804701:1228135733953" name="Queue" type="Page Entry" width="94" x="24" y="62">
+<exit_states>
+<exit_state name="next" target="Element@6923136:1229025487656"/>
+</exit_states>
+</element>
+<element height="46" id="Element@31207421:1228135733953" name="Queue2" src="com.audium.server.voiceElement.internal.SubdialogInvokeElement" type="Subdialog Invoke" width="91" x="384" y="127">
+<exit_states>
+<exit_state name="done" target="Element@4726262:1505482087995"/>
+</exit_states>
+</element>
+<element height="46" id="Element@11612164:1229024408859" name="Queue1" src="com.audium.server.voiceElement.internal.SubdialogInvokeElement" type="Subdialog Invoke" width="91" x="384" y="62">
+<exit_states>
+<exit_state name="done" target="Element@20358912:1229025518437"/>
+</exit_states>
+</element>
+<element height="46" id="Element@6923136:1229025487656" name="Get Status_01" src="com.cisco.cvp.vxml.custelem.callback.GetStatus" type="Decision Element" width="120" x="183" y="60">
+<exit_states>
+<exit_state name="done" target="Element@11612164:1229024408859"/>
+<exit_state name="error" target="Element@11612164:1229024408859">
+<bendpoint>
+<dim1 x="124" y="-19"/>
+<dim2 x="-74" y="-21"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@20358912:1229025518437" name="Get Status_02" src="com.cisco.cvp.vxml.custelem.callback.GetStatus" type="Decision Element" width="120" x="183" y="127">
+<exit_states>
+<exit_state name="done" target="Element@31207421:1228135733953"/>
+<exit_state name="error" target="Element@31207421:1228135733953">
+<bendpoint>
+<dim1 x="126" y="-21"/>
+<dim2 x="-72" y="-21"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="30" id="Element@31326070:1255642976663" type="Comment" width="241" x="183" y="12">
+<comment><![CDATA[CallbackEntry Script provided with Cisco CVP.
+Modified to support 6 queue music files]]></comment>
+</element>
+<element height="46" id="Element@4726262:1505482087995" type="Page Connector" width="87" x="304" y="216">
+<page_connector target="Element@13804701:1228135733953">Queue</page_connector>
+</element>
+</page>
